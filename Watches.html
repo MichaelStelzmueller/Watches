@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <script src="./JavaScript/watches.js" defer></script>
+    <script src="./JavaScript/scroll.js" defer></script>
+    
+    <link rel="stylesheet" href="./css/animateOnScroll.css">
+</head>
+<body>
+    <div onclick="getWatches()">
+        <h1 id="header">Watch Dreams</h1>
+    </div>
+
+    <nav id="nav">
+        <div class="navbox" onclick="showLowPriced()">
+            <h3>Low-Priced Watches</h3>
+        </div>
+        <div class="navbox" onclick="showMidPriced()">
+            <h3>Mid-Priced Watches</h3>   
+        </div>
+        <div class="navbox" onclick="showHighPriced()">
+            <h3>High-Priced Watches</h3>
+        </div>
+        <div class="navbox" onclick="showExtremeHighPriced()">
+            <h3>Extreme-High-Priced Watches</h3>
+        </div>
+    </nav>
+    <nav id="secondNav">
+        <div class="navbox" onclick="showAllRolex()">
+            <h3>Show all Rolex</h3>
+        </div>
+        <div class="navbox" onclick="showAllAudemarsPiguet()">
+            <h3>Show all Audemars Piguet</h3>
+        </div>
+        <div class="navbox" onclick="showAllCasio()">
+            <h3>Show all Casio</h3>
+        </div>
+        <div class="navbox" onclick="showAllOmega()">
+            <h3>Show all Omega</h3>
+        </div>
+        <div class="navbox" onclick="showAllChanel()">
+            <h3>Show all Chanel</h3>
+        </div>
+        <div class="navbox" onclick="showAllPatekPhilippe()">
+            <h3>Show all Patek Philippe</h3>
+        </div>
+    </nav>
+    <div id="content"></div>
+    <button onclick="topFunction()" id="myBtn" title="To the Top">To the Top</button> 
+</body>
+</html>

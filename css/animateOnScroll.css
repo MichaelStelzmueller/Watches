@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Rolex;
+    src: url(../Font/RoundslabSerif.ttf);
+}
+
+@font-face {
+    font-family: Number;
+    src: url(../Font/Martel-Regular.ttf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(../Font/Figtree-VariableFont_wght.ttf);
+}
+
+/* Allgemeines Styling */
+body {
+    background-image: url(../Bilder/background.png);
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: Body;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    opacity: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* FullScreen Slides mit autozentriertem Inhalt */
+section:nth-child(even) {
+    margin-bottom: 10%;
+    min-height: 80vh;
+}
+
+section:nth-child(odd) {
+    margin-bottom: 10%;
+    min-height: 80vh;
+}
+
+section:last-child {
+    margin-bottom: 0%;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+#box1 {
+    margin-left: 30%;
+}
+
+#box2 {
+    margin-top: 7%;
+    text-align: center;
+}
+
+#main2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+/* custom styling */
+#header {
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 8vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Rolex;
+}
+
+h1 {
+    margin-top: 2%;
+    font-size: 7vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Rolex;
+}
+
+h2 {
+    font-size: 5vh;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 8vh auto;
+    height: 60vh;
+}
+
+#infos {
+    text-align: center;
+    font-size: 2vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2%;
+}
+
+#build {
+    text-align: center;
+    font-size: 2vh;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin: 2%;
+}
+
+#prices {
+    margin-top: 2%;
+    font-size: 3.5vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Number;
+}
+
+/* Navigation */
+#nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+}
+
+#secondNav {
+    margin-top: 0.1%;
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 17%;
+    width: 100%;
+}
+
+.navbox {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.navbox:hover {
+    background-color: rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+/* Button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: rgb(172, 172, 172);
+}
